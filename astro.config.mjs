@@ -9,6 +9,16 @@ export default defineConfig({
   integrations: [react()],
 
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
+    resolve: {
+      alias: {
+        '@components': '/src/components',
+        '@layouts': '/src/layouts',
+        '@pages': '/src/pages',
+        '@assets': '/src/assets',
+        '@lib': '/src/lib',
+        '@': '/src',
+      },
+    },
   }
 });
