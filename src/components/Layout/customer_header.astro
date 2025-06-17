@@ -1,15 +1,13 @@
 ---
 import CartIcon from '@components/Icons/CartIcon'
 ---
-<header class="flex justify-between items-center p-4 bg-gray-800 text-white">
-    <div class="flex items-center bg-amber-900">
-        <h1>Sobá da Rose</h1>
-        <h2>Pedido para coleta no balcão</h2>
+<header class="bg-gray-50 flex justify-between items-center p-5 h-24">
+    <div class="flex flex-col justify-center">
+        <h1 class="text-amber-900 text-3xl">Sobá da Rose</h1>
+        <h2 class="text-amber-700 text-lg">Pedido para coleta no balcão</h2>
     </div>
-    <div class="flex items-center space-x-4 bg-amber-200">
-        <a href="">
-            <CartIcon />
-            <p>Carrinho</p>
-        </a>
-    </div>
+    <a href="" class="bg-amber-600 flex items-center gap-2 p-2 rounded-lg h-3/4">
+        <CartIcon />
+        <p class="text-white">Carrinho</p>
+    </a>
 </header>

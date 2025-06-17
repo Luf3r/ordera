@@ -2,7 +2,7 @@ import { ShoppingCart } from 'lucide-react';
 
 const App = () => {
   return (
-    <ShoppingCart />
+    <ShoppingCart color="white" />
   );
 };
 
