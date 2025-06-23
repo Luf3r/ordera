@@ -1,10 +1,17 @@
 ---
-import Header from '../components/Layout/customer_header.astro';
-import Layout from '../layouts/Layout.astro';
+import Header from '@components/Customer/customer_header.astro';
+import Main from '@components/Customer/menu.astro';
+import Layout from '@layouts/DefaultLayout.astro';
 import '../styles/global.css';
+import Categories from '@components/Customer/Carts/categories.astro';
+import Dish from '@components/Customer/Carts/dish.astro';
 
 ---
 
 <Layout>
-	<Header />
+	  <Header slot="header" />
+	  <Main slot="main">
+		<Categories slot="categories" />
+		<Dish slot="dish">
+	  </Main>
 </Layout>
